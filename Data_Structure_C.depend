@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1584205420 source:d:\projects\datastructure_c\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1704375794 source:d:\projects\datastructure_c\queue\queue.c
+	"queue.h"
+
+1704371582 d:\projects\datastructure_c\queue\queue.h
+	<stdio.h>
+	<stdlib.h>
+
+1705010294 source:d:\projects\datastructure_c\stack\stack.c
+	"stack.h"
+
+1705010078 d:\projects\datastructure_c\stack\stack.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+

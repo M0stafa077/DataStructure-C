@@ -1,10 +1,8 @@
 #include <stdio.h>
-#include <string.h>
-#include "Stack/stack.h"
-#include <stdarg.h>
+#include <stdlib.h>
 
-
-int main(void)
+int main()
 {
-
+    printf("Hello world!\n");
+    return 0;
 }
