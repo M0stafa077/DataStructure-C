@@ -33,6 +33,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Stack/stack.h" />
+		<Unit filename="Vector/vector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Vector/vector.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
