@@ -1,7 +1,7 @@
 /* --------------- Section : Includes --------------- */
 #include "vector.h"
-
 /*---------------  Section: Function Definitions --------------- */
+
 void vector_init(Vector_t* vector, size_t type_size, size_t capacity)
 {
     vector->data = malloc(type_size * capacity);
@@ -19,6 +19,7 @@ bool vector_isEmpty(const Vector_t* vector)
 {
     return (0 == vector->back);
 }
+
 bool vector_isFull(const Vector_t* vector)
 {
     return (vector->back == vector->capacity);
@@ -35,6 +36,7 @@ bool vector_pushBack(Vector_t* vector, const void* element)
     vector->back++;
     return true;
 }
+
 bool vector_popBack(Vector_t* vector, void* element)
 {
     if (vector_isEmpty(vector))
@@ -63,6 +65,7 @@ void vector_get_at(Vector_t* vector, size_t index, void* element)
     }
     memcpy(element, (char*)vector->data + index * vector->type_size, vector->type_size);
 }
+
 void vector_write_at(Vector_t* vector, size_t index, void* element)
 {
     if (vector_isFull(vector))
@@ -71,10 +74,12 @@ void vector_write_at(Vector_t* vector, size_t index, void* element)
     }
     memcpy((char*)vector->data + index * vector->type_size, element, vector->type_size);
 }
+
 size_t vector_getSize(const Vector_t* vector)
 {
     return vector->back;
 }
+
 void vector_free(Vector_t* vector)
 {
 

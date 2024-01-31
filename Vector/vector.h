@@ -2,10 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-/* --------------- Section: Macro Declarations --------------- */
-
-/* --------------- Section: Macro Functions Declarations --------------- */
-
 /* --------------- Section: Data Type Declarations --------------- */
 typedef struct
 {
