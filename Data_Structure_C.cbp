@@ -19,6 +19,20 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="APPs/BracketMatching.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="APPs/ParenthesesMatch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Queue/queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Queue/queue.h" />
+		<Unit filename="Stack/stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Stack/stack.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -1,19 +1,39 @@
 # depslib dependency file v1.0
-1584205420 source:d:\projects\datastructure_c\main.c
+1706736643 source:d:\projects\datastructure_c\main.c
 	<stdio.h>
 	<stdlib.h>
 
 1704375794 source:d:\projects\datastructure_c\queue\queue.c
 	"queue.h"
 
-1704371582 d:\projects\datastructure_c\queue\queue.h
+1706736853 d:\projects\datastructure_c\queue\queue.h
 	<stdio.h>
 	<stdlib.h>
 
-1705010294 source:d:\projects\datastructure_c\stack\stack.c
+1706738075 source:d:\projects\datastructure_c\stack\stack.c
 	"stack.h"
 
-1705010078 d:\projects\datastructure_c\stack\stack.h
+1706738010 d:\projects\datastructure_c\stack\stack.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1706298419 source:d:\projects\datastructure_c\apps\parenthesesmatch.c
+	<stdio.h>
+	<string.h>
+	<stdbool.h>
+	"../Stack/stack.h"
+
+1706736679 source:d:\projects\datastructure_c\apps\bracketmatching.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1706738565 source:d:\projects\datastructure_c\vector\vector.c
+	"vector.h"
+
+1706738599 d:\projects\datastructure_c\vector\vector.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>

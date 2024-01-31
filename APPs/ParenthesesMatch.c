@@ -76,10 +76,7 @@ int checkParenthesis(char *str, int size)
         }
     }
 
-    if(stack_isEmpty(&stack))
-        return true;
-    else
-        return false;
+    return (stack_isEmpty(&stack))
 }
 #endif
 

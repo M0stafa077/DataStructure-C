@@ -1,8 +1,8 @@
-/* Section : Includes */
+/* -------------- Section: Includes -------------- */
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Section: Data Type Declarations */
+/* -------------- Section: Data Type Declarations -------------- */
 typedef struct Queue{
     int *data;
     int front;
@@ -10,9 +10,7 @@ typedef struct Queue{
     int queue_size;
 } Queue;
 
-/* Section: Global variables */
-
-/* Section: Function Declarations */
+/* -------------- Section: Function Declarations -------------- */
 void queue_initialize(Queue *queue, int size);        // Initializes a queue object;
 void queue_reSize(Queue *queue, int new_size);       // Resizes the queue;
 int queue_isFull(Queue *queue);             // Checks if a queue is full;
