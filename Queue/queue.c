@@ -58,26 +58,23 @@ void queue_enqueue(Queue *queue, int num)
     queue->data[queue->rear] = num;
 }
 
-int queue_dequeue(Queue *queue)
+void queue_dequeue(Queue *queue)
 {
-    int ret;
     if (queue_isEmpty(queue))
     {
         printf("Queue is Empty.\n");
-        return -1;
+        return;
     }
     else
     {
-        ret = queue->data[queue->front];
 
         /* Check if the last element is dequeued */
-        if (queue->front == queue->rear)
-            queue_initialize(queue, queue->queue_size);
+        if (queue -> front == queue -> rear)
+            { queue_initialize(queue, queue->queue_size); }
 
         else
-            queue->front = (queue->front + 1) % queue->queue_size; // Circular increment
+            (queue -> front) = (queue -> front + 1) % (queue -> queue_size); // Circular increment
     }
-    return ret;
 }
 
 int queue_front(Queue *queue)
