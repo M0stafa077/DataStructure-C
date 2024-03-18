@@ -5,10 +5,10 @@
 /* --------------- Section: Data Type Declarations --------------- */
 typedef struct
 {
-    void* data;       // Pointer to the data
-    size_t type_size;      // Size of the data type
-    size_t capacity;  // Capacity of the stack
-    size_t back;
+    void* data;         // Pointer to the data
+    size_t type_size;   // Size of the data type
+    size_t capacity;    // Capacity of the stack
+    size_t back;        // Pointer to the last element.
 } Vector_t;
 /*---------------  Section: Function Declarations --------------- */
 void vector_init(Vector_t* vector, size_t type_size, size_t capacity);
