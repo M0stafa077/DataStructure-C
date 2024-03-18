@@ -1,1 +1,1 @@
-## DataStructure in C language
+## Data Structure in C language
