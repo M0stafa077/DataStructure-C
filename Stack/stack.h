@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
 
 /* -------------- Section: Macro Declarations -------------- */
 #define STACK_EMPTY         1
