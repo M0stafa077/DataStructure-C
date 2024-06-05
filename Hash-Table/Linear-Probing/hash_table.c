@@ -181,3 +181,23 @@ bool HashTable_Remove(Hash_Table_t* table, const unsigned int value)
         }
     }
 }
+
+/**
+ * @brief A software interface frees a hashTable.
+ * @param table A pointer to the hash table.
+ */
+void HashTable_Free(Hash_Table_t** table)
+{
+    if(NULL == table)
+    {
+        printf("Invalid parameteres\n");
+        return;
+    }
+    else
+    {
+        free((*(table))->table);
+        free(*table);
+        (*(table))->table = NULL;
+        (*table) = NULL;
+    }
+}
