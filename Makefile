@@ -1,8 +1,17 @@
-all: main.o linked_list.o
-	gcc main.o linked_list.o -o out
-linked_list.o:
-	gcc -c Linked_List\single_linked_list.c -o linked_list.o
-main.o:
-	gcc -c main.c -o main.o
+CC = gcc
+MAIN = main.c
+LINKED_LIST =  Linked_List/single_linked_list.c
+QUEUE = Queue/queue.c 
+STACK = Stack/stack.c
+BINARY_TREE = Binary_Tree/binary_tree.c
+HASH_TABLE = Hash-Table/Linear-Probing/hash_table.c
+TARGET = out
+
+all:
+	$(CC) -o $(TARGET) $(MAIN) $(LINKED_LIST) $(QUEUE) $(STACK) $(BINARY_TREE) $(HASH_TABLE)
+
+run: all
+	./$(TARGET)
+
 clean:
-	rm main.o linked_list.o out.exe
+	rm -f $(TARGET)
