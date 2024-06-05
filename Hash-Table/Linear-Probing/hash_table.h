@@ -70,3 +70,8 @@ void HashTable_PrintTable(Hash_Table_t* table);
  * @return false If the value is not already in the table.
  */
 bool HashTable_Remove(Hash_Table_t* table, const unsigned int value);
+/**
+ * @brief A software interface frees a hashTable.
+ * @param table A pointer to the hash table.
+ */
+void HashTable_Free(Hash_Table_t** table);
