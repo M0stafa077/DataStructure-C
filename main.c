@@ -16,6 +16,9 @@ int main()
     HashTable_Remove(table, 1000);
     HashTable_PrintTable(table);
     
+    HashTable_Free(&table);
+    HashTable_PrintTable(table);
+
     return 0;
 }
 
