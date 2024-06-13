@@ -8,6 +8,7 @@
     - Singly linked-list
     - Vector
     - Binary tree
+    - Hash Table [Linear Probing]
 
 #### Also some problem solved in the APP directory 
     - Bracket Matching using stack.  [Sprints Q4E exam]
