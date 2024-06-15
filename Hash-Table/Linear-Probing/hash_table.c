@@ -70,7 +70,17 @@ bool HashTable_Insert(Hash_Table_t* table,unsigned int value)
             {
                 return true;
             }
-            index = (index + 1) % (table -> table_size); 
+            unsigned int counter = 0;
+            while((HASH_TABLE_ENTRY_OCCUPIED == table->table[index].is_occupied))
+            {
+                if(counter > table->table_size)
+                { 
+                    printf("Unable to insert value [%d] into the hashTable\n", value);
+                    return false; 
+                }
+                ++counter;
+                index = (index + 1) % (table -> table_size); 
+            }
         }
         
         /* Assign the data to the new inserted node */
